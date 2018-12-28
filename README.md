@@ -6,4 +6,4 @@ pkg/mathext
 [![Build Status](https://travis-ci.org/weathersource/go-mathext.svg)](https://travis-ci.org/weathersource/go-mathext)
 [![Codevov](https://codecov.io/gh/weathersource/go-mathext/branch/master/graphs/badge.svg)](https://codecov.io/gh/weathersource/go-mathext)
 
-Package mathext provides functions that extend the golang math library.
+Package mathext provides functions that supplement the golang math library.

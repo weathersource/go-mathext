@@ -1,2 +1,2 @@
-// Package mathext provides functions that extend the golang math library.
+// Package mathext provides functions that supplement the golang math library.
 package mathext
