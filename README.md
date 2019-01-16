@@ -1,4 +1,4 @@
-pkg/mathext
+go-mathext
 ===========
 
 [![GoDoc](https://godoc.org/github.com/weathersource/go-mathext?status.svg)](https://godoc.org/github.com/weathersource/go-mathext)
