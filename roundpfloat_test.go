@@ -47,3 +47,45 @@ func TestRoundpfloat(t *testing.T) {
 		assert.Equal(t, test.result, Roundpfloat(test.value, test.precision))
 	}
 }
+
+func TestRoundpfloat32(t *testing.T) {
+	tests := []struct {
+		value     float32
+		precision float32
+		result    float32
+	}{
+		{
+			value:     9.999,
+			precision: 0.5,
+			result:    10,
+		},
+		{
+			value:     1.311,
+			precision: 0.5,
+			result:    1.5,
+		},
+		{
+			value:     5.725,
+			precision: 0.25,
+			result:    5.75,
+		},
+		{
+			value:     55.955,
+			precision: 1,
+			result:    56,
+		},
+    {
+			value:     55.501,
+			precision: 0.5,
+			result:    55.5,
+		},
+    {
+			value:     55.497,
+			precision: 0.5,
+			result:    55.5,
+		},
+	}
+	for _, test := range tests {
+		assert.Equal(t, test.result, Roundpfloat32(test.value, test.precision))
+	}
+}
