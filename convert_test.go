@@ -62,7 +62,7 @@ func TestMiToKm(t *testing.T) {
     assert.Equal(t, float64(96.75), o64)
 }
 
-func TestKmToM(t *testing.T) {
+func TestKmToMi(t *testing.T) {
     i64 := float64(96.75)
     o64 := KmToMi(i64)
     assert.Equal(t, float64(60.117812270868804), o64)
@@ -99,6 +99,22 @@ func TestCmToIn(t *testing.T) {
     o64 := CmToIn(i64)
     assert.Equal(t, float64(60.11811023622047), o64)
     o64 = CmToIn(i64, 2)
+    assert.Equal(t, float64(60.12), o64)
+}
+
+func TestMphToKmph(t *testing.T) {
+    i64 := float64(60.12)
+    o64 := MphToKmph(i64)
+    assert.Equal(t, float64(96.75352079999999), o64)
+    o64 = MphToKmph(i64, 2)
+    assert.Equal(t, float64(96.75), o64)
+}
+
+func TestKmphToMph(t *testing.T) {
+    i64 := float64(96.75)
+    o64 := KmphToMph(i64)
+    assert.Equal(t, float64(60.117812270868804), o64)
+    o64 = KmphToMph(i64, 2)
     assert.Equal(t, float64(60.12), o64)
 }
 

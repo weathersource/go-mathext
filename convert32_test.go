@@ -62,7 +62,7 @@ func TestMiToKm32(t *testing.T) {
     assert.Equal(t, float32(96.75), o32)
 }
 
-func TestKmToM32(t *testing.T) {
+func TestKmToMi32(t *testing.T) {
     i32 := float32(96.75)
     o32 := KmToMi32(i32)
     assert.Equal(t, float32(60.117813), o32)
@@ -99,6 +99,22 @@ func TestCmToIn32(t *testing.T) {
     o32 := CmToIn32(i32)
     assert.Equal(t, float32(60.11811), o32)
     o32 = CmToIn32(i32, 2)
+    assert.Equal(t, float32(60.12), o32)
+}
+
+func TestMphToKmph32(t *testing.T) {
+    i32 := float32(60.12)
+    o32 := MphToKmph32(i32)
+    assert.Equal(t, float32(96.75352), o32)
+    o32 = MphToKmph32(i32, 2)
+    assert.Equal(t, float32(96.75), o32)
+}
+
+func TestKmphToMph32(t *testing.T) {
+    i32 := float32(96.75)
+    o32 := KmphToMph32(i32)
+    assert.Equal(t, float32(60.117813), o32)
+    o32 = KmphToMph32(i32, 2)
     assert.Equal(t, float32(60.12), o32)
 }
 

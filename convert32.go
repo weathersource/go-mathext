@@ -84,6 +84,19 @@ func CmToIn32(cm float32, n ...int) float32 {
     return optRoundp32(cm/2.54, n...)
 }
 
+// MphToKmph32 converts the input from Miles Per Hour to Kilometers Per Hour.
+// mph is the distance in Miles Per Hour to be converted.
+// n is an option precision to apply to the result.
+func MphToKmph32(mph float32, n ...int) float32 {
+    return MiToKm32(mph, n...)
+}
+
+// KmphToMph32 converts the input from Kilometers Per Hour to Miles Per Hour.
+// kmph is the distance in Kilometers Per Hour to be converted.
+// n is an option precision to apply to the result.
+func KmphToMph32(kmph float32, n ...int) float32 {
+    return KmToMi32(kmph, n...)
+}
 
 // DegToRad32 converts an angle in Degrees to Radians
 // deg is the angle in Degrees to be converted.

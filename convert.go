@@ -84,6 +84,19 @@ func CmToIn(cm float64, n ...int) float64 {
     return optRoundp(cm/2.54, n...)
 }
 
+// MphToKmph converts the input from Miles Per Hour to Kilometers Per Hour.
+// mph is the distance in Miles Per Hour to be converted.
+// n is an option precision to apply to the result.
+func MphToKmph(mph float64, n ...int) float64 {
+    return MiToKm(mph, n...)
+}
+
+// KmphToMph converts the input from Kilometers Per Hour to Miles Per Hour.
+// kmph is the distance in Kilometers Per Hour to be converted.
+// n is an option precision to apply to the result.
+func KmphToMph(kmph float64, n ...int) float64 {
+    return KmToMi(kmph, n...)
+}
 
 // DegToRad converts an angle in Degrees to Radians
 // deg is the angle in Degrees to be converted.
