@@ -29,7 +29,7 @@ func TestRoundpfloat(t *testing.T) {
 		},
 		{
 			value:     55.955,
-			precision: 1,
+			precision: 0.5,
 			result:    56,
 		},
     {
